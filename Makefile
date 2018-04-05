@@ -11,6 +11,8 @@ test: CS1.voro.yap 6.voro.stat
 	genice $*     -f voronoi[test.db] > $@
 %.voro.stat: formats/voronoi_analysis.py Makefile
 	genice $* -r 2 2 2 -f voronoi_analysis > $@
+prepare: # might require root privilege.
+	pip install genice yaplotlib mysqlclient # graphstat
 install:
 	install -d $(DEST)
 	install -d $(DEST)/formats
