@@ -1,4 +1,4 @@
-# genice-rdf
+# genice-voronoi
 
 A [GenIce](https://github.com/vitroid/GenIce) plugin for Voronoi analysis.
 
