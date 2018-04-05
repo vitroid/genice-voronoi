@@ -6,6 +6,8 @@ A [GenIce](https://github.com/vitroid/GenIce) plugin for Voronoi analysis.
 
 * [GenIce](https://github.com/vitroid/GenIce) >=0.16.
 * [graphstat](https://github.com/vitroid/graphstat) >=0.1. (Not PIP-ready.)
+* [yaplotlib](https://github.com/vitroid/yaplotlib) >=0.1.
+* mysqlclient
 
 You have to setup MySQL database if you want to give a unique ID for graphs.
 

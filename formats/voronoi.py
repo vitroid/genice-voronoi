@@ -31,7 +31,7 @@ import pyvoro  # optional for genice.
 import networkx as nx
 
 # private library
-from genice import yaplotlib as yp
+import yaplotlib as yp
 from graphstat import graphstat_sqlite3
         
 
