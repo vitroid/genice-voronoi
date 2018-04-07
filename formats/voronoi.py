@@ -32,7 +32,8 @@ import networkx as nx
 
 # private library
 import yaplotlib as yp
-from graphstat import graphstat_sqlite3
+import graphstat
+from graphstat import graphstat_sqlite3, graphstat_mysql
         
 
         
