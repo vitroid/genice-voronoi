@@ -133,9 +133,9 @@ def hook1(lattice):
         ind[id]   = cell_index(cell)
         lattice.logger.debug("{0}:{1}".format(cnt,id))
 
-    s += "#\tcounts\tid\t"+"\t".join(["{0}".format(x) for x in range(3,11)])+"\n"
+    s += "#\tcounts\t%\tid\t"+"\t".join(["{0}".format(x) for x in range(3,11)])+"\n"
     for id in sorted(count, key=lambda x:count[x]):
-        s += "#\t{0}\t{1}\t".format(count[id], id)
+        s += "#\t{0}\t{1:.03f}\t{2}\t".format(count[id],count[id]*100/len(cells),id)
         cyc = ["{0}".format(ind[id][j]) for j in range(3,max(ind[id])+1)]
         s += "\t".join(cyc)+"\n"
     print(s)
